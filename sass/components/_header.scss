@@ -1,0 +1,21 @@
+.header {
+  &-portfolio {
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+  }
+  // & > .container {
+  //   display: flex;
+  //   align-items: center;
+  // }
+
+  // & .item:not(:last-child) {
+  //   margin-right: 50px;
+  // }
+}
+
+.link:hover .icon,
+.link:focus .icon {
+  fill: $accent-color;
+  /* --color5: var(--accent-color); */
+  transition: --color2 $transition-duration $time-function --color5
+    $transition-duration $time-function;
+}

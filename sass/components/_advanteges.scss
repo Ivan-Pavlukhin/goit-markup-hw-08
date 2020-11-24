@@ -1,0 +1,35 @@
+.advanteges-item {
+  max-width: 100%;
+}
+.advanteges-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.142;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.advanteges-text {
+  text-align: left;
+  line-height: 1.71;
+  margin-bottom: 6px;
+}
+
+.advantages .picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  width: 100%;
+  height: 120px;
+
+  border-radius: 4px;
+  background: #f5f4fa;
+}
+
+.advanteges-item:not(:last-child) {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,25 @@
+.logo {
+  .header & {
+    display: inline-block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    // margin-right: 93px;
+  }
+
+  &.link {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.167;
+  }
+  &.link.accent {
+    color: $accent-color;
+  }
+  & .black {
+    color: $title-text-color;
+  }
+
+  & .white {
+    color: $primary-white-color;
+  }
+}
