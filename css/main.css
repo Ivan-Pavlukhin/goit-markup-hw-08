@@ -325,7 +325,6 @@ body {
   .contact-container {
     margin-right: 15px;
     margin-left: auto;
-    outline: tomato 1px solid;
   }
 }
 
@@ -412,8 +411,8 @@ body {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../img/hero-min.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero-min.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-min.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0%;
@@ -1052,7 +1051,7 @@ body {
 
 .checkbox:checked ~ .checkbox-icon {
   background-color: #2196f3;
-  background-image: url(../../img/check.svg);
+  background-image: url(../img/check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: #2196f3;
