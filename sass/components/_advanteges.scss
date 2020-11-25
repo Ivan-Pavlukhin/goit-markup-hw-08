@@ -1,6 +1,7 @@
-.advanteges-item {
-  max-width: 100%;
-}
+// .advanteges-item {
+//   max-width: 100%;
+// }
+
 .advanteges-title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -30,6 +31,15 @@
   background: #f5f4fa;
 }
 
-.advanteges-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .advanteges-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advanteges-item:nth-child(2) {
+    position: relative;
+    top: -12px;
+  }
 }

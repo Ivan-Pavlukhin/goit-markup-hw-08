@@ -12,6 +12,12 @@
   transition: transform $transition-duration $time-function;
 }
 
+@media screen and (min-width: 768px) {
+  .backdrop .modal {
+    max-height: 609px;
+  }
+}
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }

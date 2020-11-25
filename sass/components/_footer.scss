@@ -42,8 +42,17 @@
   color: rgba(250, 250, 250, 0.6);
 }
 
-// .footer .container {
-//   display: flex;
+@media screen and (min-width: 768px) {
+  .footer-box-tablet {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+// @media screen and (min-width: 768px) {
+//   .footer .container {
+//     display: flex;
+//   }
 // }
 // .our-links {
 //   margin-left: 70px;
