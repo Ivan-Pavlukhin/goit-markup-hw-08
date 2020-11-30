@@ -1259,7 +1259,10 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .filter-list .item:nth-child(n + 4) {
+  .filter-list {
+    margin-top: -15px;
+  }
+  .filter-list .item {
     margin-top: 15px;
   }
 }
@@ -1349,6 +1352,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: 50px;
+  }
   .projects .grid-item {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
