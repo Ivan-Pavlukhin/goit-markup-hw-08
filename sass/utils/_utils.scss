@@ -47,21 +47,24 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 .title {
   text-align: center;
   color: $title-text-color;
 }
-
 .text {
   text-align: left;
 }
 
 .section-title {
+  margin-bottom: 50px;
   font-size: 28px;
-  padding-bottom: 50px;
   font-weight: 700;
   // font-size: 36px;
-  line-height: 1.16;
-  color: $title-text-color;
+  line-height: 1.167;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
 }

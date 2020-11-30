@@ -13,6 +13,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .active::before {
+    bottom: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .main-menu-item > .link {
     display: inline-block;
@@ -59,12 +65,15 @@
   .contact-container {
     display: flex;
   }
-}
-@media screen and (min-width: 1200px) {
+
   .main-nav,
   .contact-container .link {
     display: flex;
     align-items: center;
+  }
+
+  .contact-container-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 

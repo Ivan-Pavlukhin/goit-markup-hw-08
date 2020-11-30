@@ -32,3 +32,8 @@
   text-align: center;
   color: $primary-white-color;
 }
+
+.features-items {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,6 +1,35 @@
 .our-team {
   max-width: 100%;
   background: #f5f4fa;
+
+  .grid-item:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-between;
+      align-items: center;
+      margin-left: -30px;
+      margin-top: -30px;
+    }
+
+    .grid-item {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .grid-item {
+      flex-basis: calc(100% / 4 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
 }
 
 .our-team-item {
@@ -71,3 +100,10 @@
 
   transition: $transition-duration $time-function;
 }
+
+// @media screen and (min-width: 1200px) {
+//   .our-team-items {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+// }

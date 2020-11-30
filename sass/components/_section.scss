@@ -16,6 +16,15 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    max-width: 1600px;
+    width: 100%;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section-features {
   padding-top: 0;
 }

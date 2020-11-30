@@ -1,3 +1,9 @@
+@media screen and(min-width: 1200px) {
+  .form .block {
+    display: flex;
+  }
+}
+
 .button-submit {
   // text-align: center;
   width: 200px;
@@ -15,7 +21,7 @@
   margin-right: 0;
   margin-left: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer .form-container {
     width: 450px;
     margin-right: auto;
@@ -80,4 +86,18 @@
 
 .button-submit .sub-text {
   padding-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .item-form.email {
+    width: 358px;
+  }
+
+  .form .call {
+    text-align: left;
+  }
+
+  .button-submit.item-form {
+    margin-right: 0;
+  }
 }

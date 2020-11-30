@@ -6,6 +6,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @media screen and (min-width: 1200px) {
+    .container {
+      display: flex;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
 }
 
 .footer-box {
@@ -60,6 +68,7 @@
 .our-links .call {
   display: block;
   text-align: center;
+  line-height: 1.142;
   text-transform: uppercase;
   color: $primary-white-color;
   margin-bottom: 20px;
@@ -97,4 +106,21 @@
 .our-link:hover .icon,
 .our-link:focus .icon {
   fill: $primary-white-color;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .logo,
+  .contact-address,
+  .us-contact,
+  .our-links .call {
+    text-align: left;
+  }
+
+  .footer-box {
+    margin-bottom: 0;
+  }
+
+  .footer-box:not(:last-child) {
+    margin-right: 70px;
+  }
 }

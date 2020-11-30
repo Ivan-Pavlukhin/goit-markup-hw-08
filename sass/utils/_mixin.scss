@@ -1,0 +1,3 @@
+@mixin width-cl($cl) {
+  flex-basis: ((100% / $cl) - 30px);
+}

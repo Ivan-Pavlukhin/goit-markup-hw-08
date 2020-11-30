@@ -22,6 +22,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .header > .container {
     display: flex;
     align-items: center;
@@ -29,14 +35,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    max-width: 768px;
+  .main-menu-item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .main-menu-item:not(:last-child) {
-    margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .header {
+    max-width: 1600px;
   }
 }
 

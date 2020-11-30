@@ -43,3 +43,30 @@
     top: -12px;
   }
 }
+
+.advantages {
+  @media screen and (min-width: 768px) {
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-between;
+      align-items: center;
+      margin-left: -30px;
+      margin-top: -30px;
+    }
+
+    .grid-item {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .grid-item {
+      flex-basis: calc(100% / 4 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
+}

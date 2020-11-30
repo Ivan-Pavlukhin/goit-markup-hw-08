@@ -27,6 +27,12 @@
     padding-top: 118px;
   }
 
+  @media screen and (min-width: 1200px) {
+    .hero-content {
+      padding-top: 200px;
+    }
+  }
+
   & .title {
     display: block;
 
@@ -45,11 +51,22 @@
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+  }
+  .hero .title {
+    max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
-    & .title {
-      max-width: 360px;
-      margin-right: auto;
-      margin-left: auto;
-    }
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+  }
+  .hero .title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.364;
   }
 }
