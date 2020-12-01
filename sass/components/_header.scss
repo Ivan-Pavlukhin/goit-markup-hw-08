@@ -12,10 +12,18 @@
       display: flex;
       align-items: center;
     }
+
+    .mobile-menu {
+      display: none;
+    }
   }
 }
 
 @media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+
   .header {
     max-width: 480px;
   }
@@ -28,7 +36,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header > .container {
+  .header .menu {
     display: flex;
     align-items: center;
   }
@@ -52,4 +60,10 @@
   /* --color5: var(--accent-color); */
   transition: --color2 $transition-duration $time-function --color5
     $transition-duration $time-function;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
 }

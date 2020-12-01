@@ -204,9 +204,15 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .header .mobile-menu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
   .header {
     max-width: 480px;
   }
@@ -219,7 +225,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .header > .container {
+  .header .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -248,6 +254,12 @@ body {
   transition: --color2 250ms cubic-bezier(0.4, 0, 0.2, 1) --color5 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
 .active {
   position: relative;
   color: #2196f3;
@@ -270,7 +282,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .main-menu-item > .link {
+  .main-menu-item .link {
     display: inline-block;
     position: relative;
   }
@@ -342,6 +354,92 @@ body {
   --color5: $primary-text-color;
 }
 
+.mobile-menu {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 50;
+  padding-top: 60px;
+  padding-right: 15px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  opacity: 0;
+  visibility: hidden;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  font-size: 18px;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu .item {
+  display: block;
+  text-align: center;
+}
+
+.mobile-menu .main-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-menu .link {
+  padding-bottom: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-container {
+    padding-top: 60px;
+  }
+  .contact-container-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu-btn {
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+
+.mobile-menu-btn .icon-cross {
+  display: none;
+}
+
+.mobile-menu-btn.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin-right: 0;
+    fill: #212121;
+  }
+  .mobile-menu-btn:hover, .mobile-menu-btn:focus {
+    fill: #2196f3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
 .contact-container .icon {
   fill: #757575;
 }
@@ -382,25 +480,6 @@ body {
 @media screen and (min-width: 1200px) {
   .header .logo {
     margin-right: 93px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .icon-mobile-menu {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    margin-right: 0;
-    fill: #212121;
-  }
-  .icon-mobile-menu:hover, .icon-mobile-menu:focus {
-    fill: #2196f3;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .icon-mobile-menu {
-    display: none;
   }
 }
 
@@ -533,8 +612,6 @@ body {
   .advantages .grid-item {
     -ms-flex-preferred-size: calc(100% / 4 - 30px);
         flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
   }
 }
 
@@ -617,8 +694,6 @@ body {
   .our-team .grid-item {
     -ms-flex-preferred-size: calc(100% / 4 - 30px);
         flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
   }
 }
 
@@ -759,8 +834,6 @@ body {
   .our-clients .grid-item {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
   }
 }
 
@@ -768,8 +841,6 @@ body {
   .our-clients .grid-item {
     -ms-flex-preferred-size: calc(100% / 6 - 30px);
         flex-basis: calc(100% / 6 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
   }
 }
 
@@ -1358,8 +1429,6 @@ body {
   .projects .grid-item {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
   }
 }
 
