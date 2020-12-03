@@ -124,4 +124,9 @@
   .footer-box:not(:last-child) {
     margin-right: 70px;
   }
+
+  .our-links.footer-box,
+  .form-container {
+    padding-top: 12px;
+  }
 }

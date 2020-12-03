@@ -39,6 +39,10 @@ img {
   text-decoration: none;
 }
 
+.button {
+  letter-spacing: 0.03em;
+}
+
 .flex-center-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -999,6 +1003,10 @@ body {
   .footer-box:not(:last-child) {
     margin-right: 70px;
   }
+  .our-links.footer-box,
+  .form-container {
+    padding-top: 12px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1010,6 +1018,12 @@ body {
 }
 
 .button-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 200px;
   padding: 10px 55px;
   color: #ffffff;
@@ -1077,7 +1091,6 @@ body {
 }
 
 .button-submit.item-form {
-  display: block;
   margin-right: auto;
   margin-left: auto;
   max-width: 200px;

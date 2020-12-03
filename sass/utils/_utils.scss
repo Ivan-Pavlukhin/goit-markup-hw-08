@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  // overflow-x: hidden;
 }
 
 *,
@@ -34,6 +35,10 @@ img {
 .link,
 .button {
   text-decoration: none;
+}
+
+.button {
+  letter-spacing: 0.03em;
 }
 
 .flex-center-center {
