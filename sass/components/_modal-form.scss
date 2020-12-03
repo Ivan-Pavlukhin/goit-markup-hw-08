@@ -1,21 +1,15 @@
 .backdrop .modal {
   position: absolute;
   left: 50%;
-  top: 0;
-  width: 100%;
-  max-width: 480px;
-  max-height: 581px;
+  top: 50%;
+
+  max-width: 450px;
+  max-height: 609px;
 
   background-color: $primary-white-color;
 
-  transform: translate(-50%, 0) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   transition: transform $transition-duration $time-function;
-}
-
-@media screen and (min-width: 768px) {
-  .backdrop .modal {
-    max-height: 609px;
-  }
 }
 
 .backdrop.is-hidden .modal {
@@ -72,6 +66,10 @@
   margin-bottom: 4px;
 }
 
+.modal-form .link-sub {
+  font-size: 12px;
+}
+
 .subscribe {
   font-size: 14px;
   line-height: 1.71;
@@ -84,7 +82,7 @@
 
 .modal-input {
   display: block;
-  width: 100%;
+  width: 370px;
   height: 40px;
   padding-left: 42px;
 
@@ -151,22 +149,24 @@
 }
 
 .checkbox-label {
-  /* display: flex; */
+  display: flex;
   position: relative;
-  /* align-items: center; */
+  align-items: center;
   margin-bottom: 40px;
   padding-left: 13px;
 }
 
 .checkbox-label .label {
-  padding-left: 16px;
+  padding-left: 8px;
+  padding-right: 4px;
   font-size: 12px;
+  margin-bottom: 0;
 }
 
 .checkbox-label .checkbox-icon {
   position: absolute;
   top: 50%;
-  left: 13px;
+  left: 0;
   transform: translateY(-50%);
   transition: background-color $time-function $transition-duration,
     border-color $time-function $transition-duration;
@@ -195,4 +195,26 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
+
+  .modal-input {
+    width: 448px;
+  }
+
+  .checkbox-label .label {
+    font-size: 14px;
+  }
+
+  .modal-form .link-sub {
+    font-size: 14px;
+  }
 }
