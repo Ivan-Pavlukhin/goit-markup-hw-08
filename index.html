@@ -18,22 +18,20 @@
   <header class="header">
     <div class="container menu">
       <nav>
-        <ul class="li main-nav">
-          <li>
-            <a href="index.html" class="logo link  accent ">Web<span class="black">Studio</span></a>
-            
-          </li>
-          <!-- <li><svg class="icon icon-mobile-menu" width="40" height="40">
-            <use data-modal-open href="./img/sprite.svg#icon-menu"></use>
-            <use data-modal-close href="./img/sprite.svg#icon-close-black"></use>
-          </svg>
-        </li> -->
-          <div class="main-menu"><li class="item main-menu-item"><a href="index.html" class=" link active main ">Студия</a></li>
+        <div class=" main-nav">
+            <a href="index.html" class="logo link  accent ">Web<span class="black">Studio</span></a>       
+          <ul class="li main-menu">
+            <li class="item main-menu-item">
+              <a href="index.html" class=" link active main ">Студия</a>
+            </li>
           <li class="item main-menu-item">
             <a href="./portfolio.html" class=" link">Портфолио</a>
           </li>
-          <li class="item main-menu-item"><a href="#contacts" class=" link">Контакты</a></li></div>
+          <li class="item main-menu-item">
+            <a href="#contacts" class=" link">Контакты</a>
+          </li>
         </ul>
+        </div>
       </nav>
       <ul class="li contact-container">
         <li class="item contact-container-item">
@@ -190,22 +188,13 @@
       <h2 class="title section-title">Наша команда</h2>
       <ul class="our-team-items grid li">
         <li class="item our-team-item grid-item">
-          <img 
-          alt="Игорь Демьяненко"
-          src="./img/mobile/our-team/img-min.jpg" 
-          srcset="./img/mobile/our-team/img@2x-min.jpg 2x" 
-          width="270" class="picture"/>
-          <!-- <img
-  alt="Описание изображени для всех версий"
-  src="photo-300.jpg"
-  srcset="
-    photo-300.jpg   300w,
-    photo-600.jpg   600w,
-    photo-1200.jpg 1200w,
-    photo-2000.jpg 2000w
-  "
-  sizes="(min-width: 601px) 300px, (min-width: 901px) 600px, 100vw"
-/>-->
+          <picture>
+            <source srcset="./img/desKtop/our-team/img01.jpg 1x, ./img/desKtop/our-team/img01@2x.jpg 2x" media="(min-width: 1200px)" />
+            <source srcset="./img/tablet/our-team/img01-min.jpg 1x, ./img/tablet/our-team/img01@2x-min.jpg 2x"
+              media="(min-width: 768px)" />
+              <source srcset="./img/mobile/our-team/img-min.jpg 1x, ./img/mobile/our-team/img@2x-min.jpg 2x" />
+            <img alt="Игорь Демьяненко" src="./img/mobile/our-team/img-min.jpg"
+            width="270" class="picture" /></picture>
           <h3 class="title our-team-title">Игорь Демьяненко</h3>
           <p class="text">Product Designer</p>
           <ul class="social-links li">
@@ -240,7 +229,13 @@
           </ul>
         </li>
         <li class="item our-team-item grid-item">
-          <img src="./img/mobile/our-team/img2-min.jpg" srcset="./img/mobile/our-team/img2@2x-min.jpg 2x" alt="Ольга Репина" width="270" class="picture"/>
+          <picture>
+            <source srcset="./img/desKtop/our-team/img02.jpg 1x, ./img/desKtop/our-team/img02@2x.jpg 2x"
+              media="(min-width: 1200px)" />
+            <source srcset="./img/tablet/our-team/img02-min.jpg 1x, ./img/tablet/our-team/img02@2x-min.jpg 2x"
+              media="(min-width: 768px)" />
+              <source srcset="./img/mobile/our-team/img2-min.jpg 1x, ./img/mobile/our-team/img2@2x-min.jpg 2x" />
+            <img alt="Ольга Репина" src="./img/mobile/our-team/img2-min.jpg" width="270" class="picture" /></picture>
           <h3 class="title our-team-title">Ольга Репина</h3>
           <p class="text">Frontend Developer</p>
           <ul class="social-links li">
@@ -275,7 +270,13 @@
           </ul>
         </li>
         <li class="item our-team-item grid-item">
-          <img src="./img/mobile/our-team/img3-min.jpg" srcset="./img/mobile/our-team/img3@2x-min.jpg 2x" alt="Николай Тарасов" width="270" class="picture"/>
+          <picture>
+            <source srcset="./img/desKtop/our-team/img03.jpg 1x, ./img/desKtop/our-team/img03@2x.jpg 2x"
+              media="(min-width: 1200px)" />
+            <source srcset="./img/tablet/our-team/img03-min.jpg 1x, ./img/tablet/our-team/img03@2x-min.jpg 2x"
+              media="(min-width: 768px)" />
+              <source srcset="./img/mobile/our-team/img3-min.jpg 1x, ./img/mobile/our-team/img3@2x-min.jpg 2x"/>
+            <img alt="Николай Тарасов" src="./img/mobile/our-team/img3-min.jpg" width="270" class="picture" /></picture>
           <h3 class="title our-team-title">Николай Тарасов</h3>
           <p class="text">Marketing</p>
           <ul class="social-links li">
@@ -310,7 +311,13 @@
           </ul>
         </li>
         <li class="item our-team-item grid-item">
-          <img src="./img/mobile/our-team/img4-min.jpg" srcset="./img/mobile/our-team/img4@2x-min.jpg 2x" alt="Михаил Ермаков" width="270" class="picture"/>
+          <picture>
+            <source srcset="./img/desKtop/our-team/img04.jpg 1x, ./img/desKtop/our-team/img04@2x.jpg 2x"
+              media="(min-width: 1200px)" />
+            <source srcset="./img/tablet/our-team/img04-min.jpg 1x, ./img/tablet/our-team/img04@2x-min.jpg 2x"
+              media="(min-width: 768px)" />
+              <source srcset="./img/mobile/our-team/img4-min.jpg 1x, ./img/mobile/our-team/img4@2x-min.jpg 2x" />
+            <img alt="Михаил Ермаков" src="./img/mobile/our-team/img4-min.jpg" width="270" class="picture" /></picture>
           <h3 class="title our-team-title">Михаил Ермаков</h3>
           <p class="text">UI Designer</p>
           <ul class="social-links li">
