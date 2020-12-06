@@ -46,7 +46,7 @@
 .our-team-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.171;
   margin-bottom: 10px;
 
   color: $title-text-color;
@@ -54,7 +54,7 @@
 
 .our-team .text {
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.171;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -101,9 +101,8 @@
   transition: $transition-duration $time-function;
 }
 
-// @media screen and (min-width: 1200px) {
-//   .our-team-items {
-//     display: flex;
-//     justify-content: space-between;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .social-links {
+    padding-bottom: 30px;
+  }
+}

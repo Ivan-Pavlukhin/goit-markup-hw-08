@@ -452,17 +452,17 @@ body {
   fill: #757575;
 }
 
-.header .logo {
-  display: inline-block;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.logo.link {
+.logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.167;
+}
+
+.header .logo {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo.link.accent {
@@ -486,8 +486,10 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .header .logo {
+  .logo {
     margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.174;
   }
 }
 
@@ -751,14 +753,14 @@ body {
 .our-team-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.171;
   margin-bottom: 10px;
   color: #212121;
 }
 
 .our-team .text {
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.171;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -812,6 +814,12 @@ body {
   fill: #ffffff;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .social-links {
+    padding-bottom: 30px;
+  }
 }
 
 .items-clients .link {
@@ -921,13 +929,12 @@ body {
 
 .footer .logo {
   text-align: center;
-  padding-bottom: 10px;
 }
 
 .us-contact {
   text-align: center;
   color: rgba(250, 250, 250, 0.6);
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 .us-contact:hover,
@@ -1009,6 +1016,10 @@ body {
   .us-contact,
   .our-links .call {
     text-align: left;
+  }
+  .contact-address,
+  .us-contact {
+    line-height: 1.71;
   }
   .footer-box {
     margin-bottom: 0;
@@ -1150,8 +1161,6 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  max-width: 450px;
-  max-height: 609px;
   background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -1205,16 +1214,24 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px;
+  padding-top: 12px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
 }
 
-.modal-form .title {
+.modal-form-title {
+  width: 370px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  padding-top: 40px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: #212121;
-  margin-bottom: 12px;
 }
 
 .modal-form .label {
@@ -1294,7 +1311,8 @@ body {
   padding: 12px 16px;
   height: 120px;
   resize: none;
-  line-height: 1.143;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.01em;
   color: #212121;
 }
@@ -1323,14 +1341,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding-left: 13px;
+  font-size: 12px;
+  line-height: 1.167;
 }
 
 .checkbox-label .label {
   padding-left: 8px;
   padding-right: 4px;
   font-size: 12px;
+  line-height: 1.167;
   margin-bottom: 0;
 }
 
@@ -1367,19 +1388,30 @@ body {
   appearance: none;
 }
 
+@media screen and (min-width: 480px) {
+  .backdrop .modal {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .backdrop .modal {
-    max-width: 528px;
-    max-height: 581px;
+    width: 528px;
+  }
+  .modal-form-title {
+    width: 480px;
+    line-height: 23px;
   }
   .modal-input {
     width: 448px;
   }
   .checkbox-label .label {
     font-size: 14px;
+    line-height: 1.743;
   }
   .modal-form .link-sub {
     font-size: 14px;
+    line-height: 1.743;
   }
 }
 
