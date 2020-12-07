@@ -906,8 +906,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 59px;
+    padding-bottom: 59px;
   }
 }
 
@@ -918,7 +918,7 @@ body {
 .contact-address {
   text-align: center;
   color: #ffffff;
-  margin-top: 20px;
+  margin-top: 19px;
   font-style: normal;
 }
 
